@@ -34,8 +34,6 @@ jobs:
       - name: Build
         working-directory: webui
         run: npm run build
-        env:
-          VITE_WS_ENDPOINT: ${{ secrets.VITE_WS_ENDPOINT }}
 
       - uses: actions/upload-pages-artifact@v3
         with:
